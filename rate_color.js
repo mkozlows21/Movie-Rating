@@ -15,12 +15,12 @@ function rate_color(rating) {
 	//:return: string
 	red = 255 * (1 - (rating / 10.0));
 	green = 255 * (rating / 10.0);
-	if(red == 0)
-		red_hex = "00";
+	if(red < 16)
+		red_hex = "0" + red.toString(16)[0];
 	else
 		red_hex = red.toString(16);
-	if(green == 0)
-		green_hex = "00";
+	if(green < 16)
+		green_hex = "0" + green.toString(16)[0];
 	else
 		green_hex = green.toString(16);
 	return red_hex[0] + red_hex[1] + green_hex[0] + green_hex[1] + "00";
