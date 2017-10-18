@@ -1,0 +1,5 @@
+-User login
+-Recommended movies to watch
+-Get movie image
+-Rating and comment input
+-Movie/rating database
